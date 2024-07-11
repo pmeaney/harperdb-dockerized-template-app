@@ -20,7 +20,7 @@ This template takes the official HarperDB [application-template](https://github.
 
 #### Routes are available at "app-name/routeEndpoint"
 
-- As you can see in the `application-template/config.yaml` file, on line 13, endpointd are "relative to the app-name, like `http://server/app-name/route-name`".
+- As you can see in the `application-template/config.yaml` file, on line 13, endpoints are "relative to the app-name, like `http://server/app-name/route-name`".
 - The app-name in our case is the directory name: "application-template". And the example GET endpoint shown in routes.js is "getAll". So, our http request would look like this:
 
 ```
