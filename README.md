@@ -16,7 +16,7 @@ This template takes the official HarperDB [application-template](https://github.
 - To make requests to HarperDB endpoints, you will need to use a an "Authorization: Basic" header, with your base64 encoded username:password (using the username & password you set in the environment section of the docker-compose file). In our case, that would be:
   - `Authorization: Basic SERCX0FETUlOOnBhc3N3b3Jk`
   - Which represnts: `Authorization: Basic <base64 encoded username:password>`
-  - For more info on base64 encoding check out this [MDN Example](https://developer.mozilla.org/en-US/docs/Web/API/Window/btoa#examples). Here's an example of how to obtain that via basic browser javascript:
+  - For more info on base64 encoding check out this [MDN Example](https://developer.mozilla.org/en-US/docs/Web/API/Window/btoa#examples).
 
 #### Routes are available at "app-name/routeEndpoint"
 
