@@ -2,7 +2,7 @@
 
 This is a dockerized template of the the official HarperDB [application-template](https://github.com/HarperDB/application-template).
 
-### Start it up.
+### Start it up 🚀
 
 - Clone the repo: `git clone git@github.com:pmeaney/harperdb-dockerized-template-app.git`
 - Run the project with docker-compose: `docker compose up`
