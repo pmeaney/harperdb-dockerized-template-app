@@ -6,13 +6,14 @@ First, let's check that our schema.graphql file was picked up by the HarperDB ap
 
 This operation will describe the current schemas. We have only one: Dog. With zero records.
 
-POST http://localhost:9925/
-Content-Type: application/json
-Authorization: Basic SERCX0FETUlOOnBhc3N3b3Jk
-
-{
-"operation": "describe_all"
-}
+```
+curl -X POST http://localhost:9925/ \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Basic SERCX0FETUlOOnBhc3N3b3Jk" \
+     -d '{
+           "operation": "describe_all"
+         }'
+```
 
 ### Create a dog record.
 
@@ -27,7 +28,6 @@ curl -X POST \
     "age": 3,
     "tricks": ["sits"]
 }'
-
 ```
 
 ### Create a 2nd dog record.
