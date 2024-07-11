@@ -45,7 +45,7 @@ curl -X POST \
 }'
 ```
 
-# Check that Two dogs exist in our Dog table.
+### Check that Two dogs exist in our Dog table.
 
 That operation is defined by our getAll route in routes/index.js:
 
@@ -56,9 +56,10 @@ curl -X GET \
   -H "Authorization: Basic SERCX0FETUlOOnBhc3N3b3Jk"
 ```
 
-# Check out an example of the Operations API,
+### Check out an example of the Operations API.
 
 The [Operations API](https://docs.harperdb.io/docs/developers/operations-api) allows us to, for example, create a new table via REST API.
+Or, as we tested out at the top of this file, it allows us to describe all of our schemas.
 
 ```
 curl -X POST \
