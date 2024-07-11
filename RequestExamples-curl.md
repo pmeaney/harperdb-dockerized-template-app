@@ -58,8 +58,7 @@ curl -X GET \
 
 ### Check out an example of the Operations API.
 
-The [Operations API](https://docs.harperdb.io/docs/developers/operations-api) allows us to, for example, create a new table via REST API.
-Or, as we tested out at the top of this file, it allows us to describe all of our schemas.
+The [Operations API](https://docs.harperdb.io/docs/developers/operations-api) allows us to, for example, create a new table via REST API. (As we tested out at the top of this file, also it allows us to describe all of our schemas, and offers a myriad of other uses: https://docs.harperdb.io/docs/developers/operations-api)
 
 ```
 curl -X POST \
