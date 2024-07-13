@@ -1,4 +1,4 @@
-import { fnExampleCJS } from "./libExamples/cjsexample.cjs";
+import { fnExampleCJS } from "../libExamples/cjsexample.cjs";
 
 const routesIndex = async (server, { hdbCore, logger }) => {
   server.route({
