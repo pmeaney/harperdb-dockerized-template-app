@@ -2,6 +2,12 @@
 
 This is a dockerized template of the the official HarperDB [application-template](https://github.com/HarperDB/application-template).
 
+_Update_ Jul 13, 2024
+
+- Modified the project from the original `application-template` to change the `./components/application-template/routes/index.js` file such that:
+  - The exported function is now called "routesIndex"
+  - It contains two example routes
+
 ### Start it up 🚀
 
 - Clone the repo: `git clone git@github.com:pmeaney/harperdb-dockerized-template-app.git`

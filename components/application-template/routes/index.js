@@ -1,4 +1,4 @@
-const getAll = async (server, { hdbCore, logger }) => {
+const routesIndex = async (server, { hdbCore, logger }) => {
   server.route({
     url: "/getAll",
     method: "GET",
@@ -10,5 +10,13 @@ const getAll = async (server, { hdbCore, logger }) => {
       return hdbCore.requestWithoutAuthentication(request);
     },
   });
+
+  server.route({
+    url: "/getAnotherRoute",
+    method: "GET",
+    handler: async (request, reply) => {
+      return reply.send("hello from /getAnotherRoute");
+    },
+  });
 };
-export default getAll;
+export default routesIndex;
