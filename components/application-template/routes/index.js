@@ -1,5 +1,8 @@
 import { fnExampleCJS } from "../libExamples/cjsexample.cjs";
-import { fnExampleES } from "../libExamples/esexample.js";
+import {
+  fnExampleES,
+  catFactAPIExampleRequest,
+} from "../libExamples/esexample.js";
 
 const routesIndex = async (server, { hdbCore, logger }) => {
   server.route({
@@ -20,6 +23,7 @@ const routesIndex = async (server, { hdbCore, logger }) => {
     handler: async (request, reply) => {
       fnExampleCJS();
       fnExampleES();
+      await catFactAPIExampleRequest();
       return reply.send(
         "hello from /getAnotherRoute. Check the terminal for example console log statements from functions we have imported."
       );
