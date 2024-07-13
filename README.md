@@ -31,9 +31,10 @@ Content-Type: application/json
 Authorization: Basic SERCX0FETUlOOnBhc3N3b3Jk
 ```
 
-#### An example of CJS & ECMA functions are included
+#### An example of CJS & ES Modules are included
 
 - The directory `application-template/libExamples` contains two example functions, to demonstrate that HarperDB's Fastify REST API is compatible with both CommonJS and ECMA style function module exports and imports.
+  - Note: The `.js` or `.cjs` file extension is mandatory in the import statement, e.g. `import { fnExampleES } from "../libExamples/esexample.js";`
 
 ### Overview of setting up this project:
 
