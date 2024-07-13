@@ -37,3 +37,6 @@ Authorization: Basic SERCX0FETUlOOnBhc3N3b3Jk
 - Clone the HarperDB application-template such that the entire directory of "application-template" sits in the `/home/harperdb/hdb/components` directory via a Docker bind mount (to share the app template directory and its files into the container), which will need to be defined in the docker-compose.yml.
 - Add in snippets from the docs and make any small edits as necessary
 - Set up some basic http requests which include an auth basic base64 header
+- Modify the project from the original `application-template` to change the `./components/application-template/routes/index.js` file such that:
+  - The exported function is now called "routesIndex"
+  - It contains two example routes
