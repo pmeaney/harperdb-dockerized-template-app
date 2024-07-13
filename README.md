@@ -31,6 +31,10 @@ Content-Type: application/json
 Authorization: Basic SERCX0FETUlOOnBhc3N3b3Jk
 ```
 
+#### An example of CJS & ECMA functions are included
+
+- The directory `application-template/libExamples` contains two example functions, to demonstrate that HarperDB's Fastify REST API is compatible with both CommonJS and ECMA style function module exports and imports.
+
 ### Overview of setting up this project:
 
 - Convert the `docker run` command shown at the [HarperDB DockerHub page](https://hub.docker.com/r/harperdb/harperdb) into a docker-compose.yml file
@@ -40,3 +44,4 @@ Authorization: Basic SERCX0FETUlOOnBhc3N3b3Jk
 - Modify the project from the original `application-template` to change the `./components/application-template/routes/index.js` file such that:
   - The exported function is now called "routesIndex"
   - It contains two example routes
+- Add examples of CJS and ECMA style function modules to an example function lib directory ("libExamples")
