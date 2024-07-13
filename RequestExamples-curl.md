@@ -71,3 +71,9 @@ curl -X POST \
 "primary_key": "id"
 }'
 ```
+
+### Let's check out a second route.
+
+curl -X GET "http://localhost:9926/application-template/getAnotherRoute" \
+ -H "Content-Type: application/json" \
+ -H "Authorization: Basic SERCX0FETUlOOnBhc3N3b3Jk"

@@ -72,7 +72,7 @@ Authorization: Basic SERCX0FETUlOOnBhc3N3b3Jk
 }
 
 ###
-# Let's check a second route.
+# Let's check out a second route.
 GET http://localhost:9926/application-template/getAnotherRoute
 Content-Type: application/json
 Authorization: Basic SERCX0FETUlOOnBhc3N3b3Jk
