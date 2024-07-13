@@ -1,3 +1,5 @@
+import { fnExampleCJS } from "./libExamples/cjsexample.cjs";
+
 const routesIndex = async (server, { hdbCore, logger }) => {
   server.route({
     url: "/getAll",
@@ -15,7 +17,10 @@ const routesIndex = async (server, { hdbCore, logger }) => {
     url: "/getAnotherRoute",
     method: "GET",
     handler: async (request, reply) => {
-      return reply.send("hello from /getAnotherRoute");
+      fnExampleCJS();
+      return reply.send(
+        "hello from /getAnotherRoute. Check the terminal for example console log statements from functions we have imported."
+      );
     },
   });
 };
